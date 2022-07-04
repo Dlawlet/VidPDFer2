@@ -253,7 +253,34 @@ QPushButton:hover{
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_4"/>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="page_home"/>
+            <widget class="QWidget" name="page_credits">
+             <widget class="QFrame" name="credits_content">
+              <property name="geometry">
+               <rect>
+                <x>240</x>
+                <y>200</y>
+                <width>120</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item>
@@ -333,7 +360,7 @@ QPushButton:hover{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_2">
+           <widget class="QFrame" name="frame_grip">
             <property name="maximumSize">
              <size>
               <width>30</width>
@@ -346,40 +373,6 @@ QPushButton:hover{
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_5">
-             <item>
-              <widget class="QFrame" name="frame_3">
-               <property name="maximumSize">
-                <size>
-                 <width>30</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_grip">
-               <property name="maximumSize">
-                <size>
-                 <width>30</width>
-                 <height>10</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
            </widget>
           </item>
          </layout>

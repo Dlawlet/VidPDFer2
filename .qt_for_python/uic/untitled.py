@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'template.ui'
+## Form generated from reading UI file 'untitled.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -27,7 +27,6 @@ class Ui_MainWindow(object):
         self.Drop_Shadow = QFrame(self.centralwidget)
         self.Drop_Shadow.setObjectName(u"Drop_Shadow")
         self.Drop_Shadow.setStyleSheet(u"border-radius: 10px;\n"
-"background-color: qlineargradient(spread:pad, x1:0.94, y1:0.892, x2:0.034, y2:0.085, stop:0.0501949 rgba(0, 0, 56, 255), stop:0.275797 rgba(39, 0, 59, 255), stop:0.545966 rgba(39, 0, 59, 255), stop:0.793621 rgba(0, 0, 74, 255), stop:0.949805 rgba(36, 0, 54, 255));\n"
 "")
         self.Drop_Shadow.setFrameShape(QFrame.StyledPanel)
         self.Drop_Shadow.setFrameShadow(QFrame.Raised)
@@ -61,7 +60,6 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_title.setFont(font)
-        self.label_title.setStyleSheet(u"color: rgb(221, 221, 221);")
 
         self.verticalLayout_2.addWidget(self.label_title)
 
@@ -128,24 +126,6 @@ class Ui_MainWindow(object):
         self.content_bar.setStyleSheet(u"background-color: none;;")
         self.content_bar.setFrameShape(QFrame.StyledPanel)
         self.content_bar.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_4 = QVBoxLayout(self.content_bar)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.stackedWidget = QStackedWidget(self.content_bar)
-        self.stackedWidget.setObjectName(u"stackedWidget")
-        self.page_home = QWidget()
-        self.page_home.setObjectName(u"page_home")
-        self.stackedWidget.addWidget(self.page_home)
-        self.page_credits = QWidget()
-        self.page_credits.setObjectName(u"page_credits")
-        self.credits_content = QFrame(self.page_credits)
-        self.credits_content.setObjectName(u"credits_content")
-        self.credits_content.setGeometry(QRect(240, 200, 120, 80))
-        self.credits_content.setFrameShape(QFrame.StyledPanel)
-        self.credits_content.setFrameShadow(QFrame.Raised)
-        self.stackedWidget.addWidget(self.page_credits)
-
-        self.verticalLayout_4.addWidget(self.stackedWidget)
-
 
         self.verticalLayout.addWidget(self.content_bar)
 
@@ -159,31 +139,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.frame = QFrame(self.credit_bar)
-        self.frame.setObjectName(u"frame")
-        self.frame.setMaximumSize(QSize(16777215, 30))
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_3 = QVBoxLayout(self.frame)
-        self.verticalLayout_3.setSpacing(0)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(9, 0, 0, 9)
-        self.label = QLabel(self.frame)
-        self.label.setObjectName(u"label")
-        self.label.setStyleSheet(u"color: rgba(221, 221, 221, 200);")
+        self.labe_credits = QFrame(self.credit_bar)
+        self.labe_credits.setObjectName(u"labe_credits")
+        self.labe_credits.setMaximumSize(QSize(30, 30))
+        self.labe_credits.setFrameShape(QFrame.StyledPanel)
+        self.labe_credits.setFrameShadow(QFrame.Raised)
 
-        self.verticalLayout_3.addWidget(self.label)
-
-
-        self.horizontalLayout_3.addWidget(self.frame)
-
-        self.frame_grip = QFrame(self.credit_bar)
-        self.frame_grip.setObjectName(u"frame_grip")
-        self.frame_grip.setMaximumSize(QSize(30, 30))
-        self.frame_grip.setFrameShape(QFrame.StyledPanel)
-        self.frame_grip.setFrameShadow(QFrame.Raised)
-
-        self.horizontalLayout_3.addWidget(self.frame_grip)
+        self.horizontalLayout_3.addWidget(self.labe_credits)
 
 
         self.verticalLayout.addWidget(self.credit_bar)
@@ -195,9 +157,6 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
-
-
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
@@ -207,6 +166,5 @@ class Ui_MainWindow(object):
         self.btn_mini.setText("")
         self.btn_maxi.setText("")
         self.btn_close.setText("")
-        self.label.setText(QCoreApplication.translate("MainWindow", u"By Nakira @HWork", None))
     # retranslateUi
 
