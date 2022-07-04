@@ -19,7 +19,8 @@ class UIFunctions(MainWindow):
         self.ui.btn_maxi.setToolTip("Maximize")
         self.ui.btn_mini.setToolTip("sleep")
         self.ui.btn_close.setToolTip("close")
-
+        self.ui.listWidget.setAcceptDrops(True)
+        
     ## ==> MAXIMIZE RESTORE FUNCTION
     def maximize_restore(self):
         global GLOBAL_STATE
@@ -79,3 +80,4 @@ class UIFunctions(MainWindow):
     ## RETURN STATUS IF WINDOWS IS MAXIMIZE OR RESTAURED
     def returnStatus():
         return GLOBAL_STATE
+
